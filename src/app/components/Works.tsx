@@ -178,7 +178,7 @@ const Works = () => {
           </p>
         </div>
         <div className="w-full">
-          <img
+          <Image
             src={"/loopstudios-landing-page.png"}
             alt=""
             width={400}

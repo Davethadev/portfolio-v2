@@ -6,7 +6,7 @@ const Contact = () => {
           Interested in working with me?
         </h2>
         <p className="font-[400] text-[#999999] text-base md:text-lg w-auto md:w-96 pt-3">
-          I'm active on all social media platforms listed below, but you can
+          I&apos;m active on all social media platforms listed below, but you can
           also send me an email and I will get back to you within 24-48 hours.
         </p>
         <a

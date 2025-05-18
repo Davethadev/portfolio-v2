@@ -99,7 +99,7 @@ const Works = () => {
             className="block font-[400] text-white text-xl md:text-2xl py-2"
             href="https://annabel-anthony.vercel.app/"
           >
-            Annabel's Portfolio Website
+            Annabel&apos;s Portfolio Website
           </a>
           <p className="font-[400] text-[#999999] px-0 pb-14 text-base md:text-lg">
             This is the personal portfolio of Annabel Anthony, a UI/UX designer
@@ -145,7 +145,7 @@ const Works = () => {
           </a>
           <p className="font-[400] text-[#999999] px-0 pb-14 text-base md:text-lg">
             Ridepay is a mobile application that streamlines ride fare payments.
-            Passengers can effortlessly settle fares by entering the driver's
+            Passengers can effortlessly settle fares by entering the driver&apos;s
             unique four-digit code, ensuring secure and instant transactions.
             The app also offers offline payment capabilities and loan options
             for added convenience.

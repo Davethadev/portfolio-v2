@@ -16,7 +16,7 @@ const About = () => {
           </p>
 
           <p className="font-[400] text-[#d9d9d9] text-base md:text-lg w-full md:w-96 pt-4">
-            I'm proud to announce that I am continually learning and improving
+            I&apos;m proud to announce that I am continually learning and improving
             my skills so as to open myself to a world of opportunities.
           </p>
         </div>
@@ -31,13 +31,13 @@ const About = () => {
           </p>
 
           <p className="font-[400] text-[#d9d9d9] text-base md:text-lg w-full md:w-96 pt-4">
-            "How big would you dream, if you knew you wouldn't fail?" Even as I
+            &quot;How big would you dream, if you knew you wouldn&apos;t fail?&quot; Even as I
             continue to improve my skills as a developer, I also try to make out
-            time for all the other things I'm passionate about.
+            time for all the other things I&apos;m passionate about.
           </p>
 
           <p className="font-[400] text-[#d9d9d9] text-base md:text-lg w-full md:w-96 pt-4">
-            I'm happy to chat over coffe sometime about I can help your company
+            I&apos;m happy to chat over coffe sometime about I can help your company
             or growing business.
           </p>
         </div>

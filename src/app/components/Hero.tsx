@@ -13,10 +13,10 @@ const Hero = () => {
         />
       </div>
       <div className="w-full md:w-[60%]">
-        <h1 className="font-bold text-white text-2xl md:text-5xl leading-snug pt-12 md:pt-0">
+        <h1 className="montserrat-regular font-semibold text-white text-2xl md:text-5xl leading-snug pt-12 md:pt-0">
           Helping you build beautiful and interactive websites.
         </h1>
-        <p className="font-[400] text-[#999999] pt-4 text-base md:text-xl">
+        <p className="montserrat-regular text-[#999999] pt-4 text-sm md:text-base">
           Fullstack Web Developer with a frontend focus, building responsive,
           performant interfaces with React and Next.js, and integrating powerful
           backend systems using Node.js, Express, and MongoDB.

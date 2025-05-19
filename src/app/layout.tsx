@@ -1,15 +1,42 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const archivo = localFont({
+  src: [
+    {
+      path: "../../public/fonts/archivo/Archivo-Light.ttf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/archivo/Archivo-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/archivo/Archivo-Medium.ttf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/archivo/Archivo-SemiBold.ttf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/archivo/Archivo-Bold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-archivo",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${archivo.variable} antialiased`}
       >
         {children}
       </body>

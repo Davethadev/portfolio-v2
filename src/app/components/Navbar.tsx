@@ -19,30 +19,30 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full md:w-[85%] mx-auto my-0 flex justify-between items-center pt-8 px-4 md:px-0">
-        <div id="logo" className="font-[400] text-white text-base">
-          David Umanah
+        <div id="logo" className="font-archivo font-normal text-white text-lg">
+          DUO
         </div>
         <button onClick={openMobileNav} className="md:hidden">
           <Menu strokeWidth={1.5} color="white" />
         </button>
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
           {/* <a href="#">Articles</a> */}
           <a
-            className="font-[400] text-[rgb(153,153,153)] text-lg ml-4"
+            className="font-archivo font-normal text-base text-[#999999] hover:text-white transition-all 500ms ease-in-out"
             href="#work"
             onClick={closeMobileNav}
           >
             Work
           </a>
           <a
-            className="font-[400] text-[#999999] text-lg ml-4"
+            className="font-archivo font-normal text-base text-[#999999] hover:text-white transition-all 500ms ease-in-out"
             href="#about"
             onClick={closeMobileNav}
           >
             About
           </a>
           <a
-            className="font-[400] text-[#999999] text-lg ml-4"
+            className="font-archivo font-normal text-base text-[#999999] hover:text-white transition-all 500ms ease-in-out"
             href="#contact-me"
             onClick={closeMobileNav}
           >
@@ -50,7 +50,7 @@ const Navbar = () => {
           </a>
         </div>
         <a
-          className="w-fit text-center font-[400] py-1 px-4 text-black bg-yellow-300 text-lg rounded hidden md:block uppercase"
+          className="w-fit text-center font-archivo font-normal py-1.5 px-4 text-black bg-yellow-300 hover:bg-black hover:text-white text-sm rounded hidden md:block uppercase transition-all 500ms ease-in-out"
           href="mailto: david_umanah@yahoo.com"
         >
           Get in touch
@@ -63,17 +63,17 @@ const Navbar = () => {
             <X strokeWidth={1.5} color="white" />
           </button>
           {/* <a href="#">Articles</a> */}
-          <button className="uppercase text-white mt-16 flex justify-center w-full">
+          <button className="font-archivo font-normal uppercase text-white mt-16 mx-auto text-center block">
             Work
           </button>
-          <button className="uppercase text-white mt-4 flex justify-center w-full">
+          <button className="font-archivo font-normal uppercase text-white mt-4 mx-auto text-center block">
             About
           </button>
-          <button className="uppercase text-white mt-4 flex justify-center w-full">
+          <button className=".font-archivo font-normal transition-all 500ms ease-in-out uppercase text-white mt-4 mx-auto text-center block">
             Contact
           </button>
           <Link
-            className="w-fit mx-auto text-center font-[400] py-1 px-4 text-black bg-yellow-300 text-base rounded mt-4 uppercase block"
+            className="font-archivo font-normal w-fit mx-auto text-center py-1.5 px-4 text-black bg-yellow-300 hover:bg-black hover:text-white text-sm rounded mt-4 uppercase block transition-all 500ms ease-in-out"
             href="mailto: david_umanah@yahoo.com"
           >
             Get in touch

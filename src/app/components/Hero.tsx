@@ -14,12 +14,14 @@ const Hero = () => {
       </div>
       <div className="w-full md:w-[60%]">
         <h1 className="font-archivo font-semibold text-white text-2xl md:text-5xl leading-8 md:leading-14 pt-12 md:pt-0">
-          Helping you build beautiful and interactive websites.
+          Design. Code. Deploy. Repeat.
         </h1>
-        <p className="font-archivo font-normal text-[#999999] pt-1 md:pt-0 text-sm md:text-base">
-          Fullstack Web Developer with a frontend focus, building responsive,
-          performant interfaces with React and Next.js, and integrating powerful
-          backend systems using Node.js, Express, and MongoDB.
+        {/* <h3 className="font-archivo font-semibold text-white text-lg md:text-xl leading-8 md:leading-14 md:pt-0">(Frontend to backend, I&apos;ve got it covered.)</h3> */}
+        <p className="font-archivo font-normal text-[#999999] pt-1 text-sm md:text-base">
+          Full-Stack Developer proficient in building scalable web applications
+          using React, Next.js, Node.js, and Express. Experienced in integrating
+          RESTful APIs, managing databases, and implementing secure
+          authentication systems.
         </p>
       </div>
       <div className="hidden md:block">

@@ -12,7 +12,7 @@ const Hero = () => {
           className=""
         />
       </div>
-      <div className="w-full md:w-[60%]">
+      <div className="w-full md:w-[60%] px-4 md:px-0 text-center md:text-left">
         <h1 className="font-archivo font-semibold text-white text-2xl md:text-5xl leading-8 md:leading-14 pt-12 md:pt-0">
           Design. Code. Deploy. Repeat.
         </h1>

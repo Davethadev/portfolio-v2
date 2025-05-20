@@ -10,7 +10,7 @@ const Contact = () => {
           also send me an email and I will get back to you within 24-48 hours.
         </p>
         <a
-          className="block mt-4 mx-0 mb-14 px-2 py-2 rounded w-36 text-center text-sm font-archivo font-normal text-black bg-yellow-300 hover:bg-black hover:text-white md:block uppercase transition-all 500ms ease-in-out"
+          className="block mt-4 mx-0 px-2 py-2 rounded w-36 text-center text-sm font-archivo font-normal text-black bg-yellow-300 hover:bg-black hover:text-white md:block uppercase transition-all 500ms ease-in-out"
           href="mailto: david_umanah@yahoo.com"
         >
           Get in touch

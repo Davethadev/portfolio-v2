@@ -39,7 +39,7 @@ const Navbar = () => {
             </a>
             <span className="h-0.25 bg-white w-0 block"></span>
           </li>
-          <li className="space-y-0.5">
+          {/* <li className="space-y-0.5">
             <a
               className="font-archivo font-normal text-base text-white transition-all 500ms ease-in-out block"
               href="#about"
@@ -48,7 +48,7 @@ const Navbar = () => {
               About
             </a>
             <span className="h-0.25 bg-white w-0 block"></span>
-          </li>
+          </li> */}
           <li className="space-y-0.5">
             <a
               className="font-archivo font-normal text-base text-white transition-all 500ms ease-in-out block"
@@ -77,15 +77,15 @@ const Navbar = () => {
             <X strokeWidth={1.5} color="white" />
           </button>
           {/* <a href="#">Articles</a> */}
-          <button className="font-archivo font-normal uppercase text-white mt-16 mx-auto text-center block">
+          <a href="#work" onClick={closeMobileNav} className="font-archivo font-normal uppercase text-white mt-16 mx-auto text-center block">
             Work
-          </button>
-          <button className="font-archivo font-normal uppercase text-white mt-4 mx-auto text-center block">
+          </a>
+          {/* <a href="" className="font-archivo font-normal uppercase text-white mt-4 mx-auto text-center block">
             About
-          </button>
-          <button className=".font-archivo font-normal transition-all 500ms ease-in-out uppercase text-white mt-4 mx-auto text-center block">
+          </a> */}
+          <a href="#contact-me" onClick={closeMobileNav} className=".font-archivo font-normal transition-all 500ms ease-in-out uppercase text-white mt-4 mx-auto text-center block">
             Contact
-          </button>
+          </a>
           <Link
             className="font-archivo font-normal w-fit mx-auto text-center py-1.5 px-4 text-black bg-yellow-300 hover:bg-black hover:text-white text-sm rounded mt-4 uppercase block transition-all 500ms ease-in-out"
             href="mailto: david_umanah@yahoo.com"

@@ -7,17 +7,17 @@ const Footer = () => {
         <div className="font-archivo font-normal text-white text-base">DUO</div>
         <div className="flex items-center gap-4">
           <a className="block text-xl" href="https://github.com/Davethadev">
-            <Image src='/github.svg' alt="" width={18} height={18} />
+            <Image src='/github-brands-white.svg' alt="" width={18} height={18} />
           </a>
           <a className="block text-xl" href="https://linkedin.com/in/david-umanah-364a2924b">
-            <Image src='/linkedin-brands-solid.svg' alt="" width={18} height={18} />
+            <Image src='/linkedin-brands.svg' alt="" width={18} height={18} />
           </a>
-          <a
+          {/* <a
             className="block text-xl"
             href="https://mobile.twitter.com/_callmedaveed"
           >
-            <Image src='/x.svg' alt="" width={18} height={18} />
-          </a>
+            <Image src='/x-twitter-brands.svg' alt="" width={18} height={18} />
+          </a> */}
         </div>
       </div>
     </footer>

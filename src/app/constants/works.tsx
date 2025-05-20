@@ -24,12 +24,46 @@ export const works = [
     href: "https://inspectorpro.netlify.app/",
   },
   {
+    img: "/cas.png",
+    title: "CourseAlloc",
+    desc: `A fullstack MERN app built to manage lecturer-course allocations in
+      universities. Includes authentication, role-based dashboards for admins
+      and lecturers, and a centralized course management system.`,
+    href: "https://course-alloc-system.netlify.app/",
+  },
+  {
     img: "/mlogistics.png",
     title: "Mlogistics",
     desc: `Mlogistics is a logistics management application designed to
             streamline the delivery of goods by connecting customers with local
             businesses and riders.`,
     href: "https://mlogistics-app-v2.netlify.app/",
+  },
+  {
+    img: "/api-preview-2.png",
+    title: "Course Allocation System API",
+    desc: (
+      <>
+        A RESTful backend built with Node.js and MongoDB for managing lecturer
+        course allocations. Includes JWT authentication, role-based access
+        (Admin & Lecturer), and endpoints for creating courses, assigning
+        lecturers, and retrieving allocations.
+      </>
+    ),
+    href: "https://github.com/Davethadev/course-allocation-system-backend.git",
+  },
+
+  {
+    img: "/api-preview-2.png", // use a custom image or placeholder like `/api-preview.png`
+    title: "Blog API",
+    desc: (
+      <>
+        A RESTful API built with Express and MongoDB that supports CRUD
+        operations for posts, user authentication with JWT, and route protection
+        for admin access. Designed for scalability and extensibility.
+      </>
+    ),
+    href: "https://github.com/Davethadev/blog-API.git",
   },
   {
     img: "/annabel-portfolio-website.png",

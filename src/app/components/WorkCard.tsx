@@ -12,6 +12,8 @@ type WorkCardProps = {
 const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-duration="500"
       className="w-full bg-[#11191d] rounded-xl px-8 py-8 space-y-4 relative"
     >
       <Image
@@ -29,7 +31,7 @@ const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
           {desc as ReactNode}
         </p>
         <div className="flex items-center justify-between absolute bottom-0 w-full">
-          <a href="" className="">
+          {/* <a href="" className="">
             <Image
               src={"/github-brands-white.svg"}
               alt=""
@@ -37,13 +39,13 @@ const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
               height={24}
               className=""
             />
-          </a>
+          </a> */}
           <a
             href={href}
             className="font-archivo font-medium text-sm md:text-base text-white w-full rounded-lg flex items-center justify-end gap-2 view-live-btn"
             target="_blank"
           >
-            View live{" "}
+            {title === 'Blog API' || title === 'Course Allocation System API' ? 'Github Url': "View live"}{" "}
             <span>
               <MoveRight strokeWidth={1.5} color="white" />
             </span>

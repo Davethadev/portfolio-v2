@@ -7,7 +7,14 @@ const Tools = () => {
       <div className="w-full md:w-[85%] mx-auto h-auto py-8">
         <ul className="flex items-center justify-center gap-8">
           {tools.map((tool, i) => (
-            <li key={i}><Image  src={tool} alt="" width={48} height={48} /> </li>
+            <li
+              key={i}
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="500"
+            >
+              <Image src={tool} alt="" width={48} height={48} />{" "}
+            </li>
           ))}
         </ul>
       </div>

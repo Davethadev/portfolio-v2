@@ -12,8 +12,8 @@ type WorkCardProps = {
 const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
   return (
     <div
-      // data-aos="fade-up"
-      // data-aos-duration="250"
+      data-aos="fade-up"
+      // data-aos-duration="500"
       className="w-full bg-[#11191d] rounded-xl px-8 py-8 space-y-4 relative"
     >
       <Image

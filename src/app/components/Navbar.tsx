@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -67,33 +67,51 @@ const Navbar = () => {
           Get in touch
         </a>
       </div>
-
-      {isMobileNav && (
-        <div className="md:hidden w-full text-center py-8 px-0 absolute top-0 z-10 bg-black h-screen overflow-y-clip">
-          <button
-            className="md:hidden absolute right-8"
-            onClick={closeMobileNav}
+      <AnimatePresence>
+        {isMobileNav && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { ease: "easeInOut", duration: 0.25, type: "spring" },
+            }}
+            exit={{ opacity: 0, y: 20 }}
+            className="md:hidden w-[90%] mx-auto pt-4 pb-16 px-0 absolute top-16 right-0 left-0 text-center z-10 bg-black h-auto rounded-sm"
           >
-            <X strokeWidth={1.5} color="white" />
-          </button>
-          {/* <a href="#">Articles</a> */}
-          <a href="#work" onClick={closeMobileNav} className="font-archivo font-normal uppercase text-white mt-16 mx-auto text-center block">
-            Work
-          </a>
-          {/* <a href="" className="font-archivo font-normal uppercase text-white mt-4 mx-auto text-center block">
+            <button
+              className="md:hidden absolute right-8"
+              onClick={closeMobileNav}
+            >
+              <X strokeWidth={1.5} color="white" />
+            </button>
+            {/* <a href="#">Articles</a> */}
+            <a
+              href="#work"
+              onClick={closeMobileNav}
+              className="font-archivo font-normal uppercase text-white mt-16 mx-auto text-center block"
+            >
+              Work
+            </a>
+            {/* <a href="" className="font-archivo font-normal uppercase text-white mt-4 mx-auto text-center block">
             About
           </a> */}
-          <a href="#contact-me" onClick={closeMobileNav} className=".font-archivo font-normal transition-all 500ms ease-in-out uppercase text-white mt-4 mx-auto text-center block">
-            Contact
-          </a>
-          <Link
-            className="font-archivo font-normal w-fit mx-auto text-center py-1.5 px-4 text-black bg-yellow-300 hover:bg-black hover:text-white text-sm rounded mt-4 uppercase block transition-all 500ms ease-in-out"
-            href="mailto: david_umanah@yahoo.com"
-          >
-            Get in touch
-          </Link>
-        </div>
-      )}
+            <a
+              href="#contact-me"
+              onClick={closeMobileNav}
+              className=".font-archivo font-normal transition-all 500ms ease-in-out uppercase text-white mt-4 mx-auto text-center block"
+            >
+              Contact
+            </a>
+            <Link
+              className="font-archivo font-normal w-fit mx-auto text-center py-1.5 px-4 text-black bg-yellow-300 hover:bg-black hover:text-white text-sm rounded mt-4 uppercase block transition-all 500ms ease-in-out"
+              href="mailto: david_umanah@yahoo.com"
+            >
+              Get in touch
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

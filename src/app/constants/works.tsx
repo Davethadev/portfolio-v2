@@ -34,9 +34,16 @@ export const works = [
   {
     img: "/mlogistics.png",
     title: "Mlogistics",
-    desc: `Mlogistics is a logistics management application designed to
-            streamline the delivery of goods by connecting customers with local
-            businesses and riders.`,
+    desc: (
+      <>
+        Mlogistics is a logistics management application designed to streamline
+        the delivery of goods by connecting customers with local businesses and
+        riders. <strong>Currently in development</strong>; many of the core
+        features like live tracking and user dashboards are being actively
+        built.
+      </>
+    ),
+
     href: "https://mlogistics-app-v2.netlify.app/",
   },
   {

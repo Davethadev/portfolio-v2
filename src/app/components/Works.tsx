@@ -5,9 +5,14 @@ import { works } from "../constants/works";
 const Works = () => {
   return (
     <div id="work" className="pb-14 px-0 pt-8 w-full">
-      <h2 className="text-center font-archivo font-semibold text-2xl md:text-4xl text-white py-16">
+      <h2 className="text-center font-archivo font-semibold text-2xl md:text-4xl text-white pt-16 pb-4">
         These are some of my projects
       </h2>
+      <p className="text-sm text-[#999] text-center italic">
+        ⚠️ Note: Most of the web apps shown below may have
+        limited functionality as their backend servers are currently offline or
+        running on local environments.
+      </p>
       {/* <Tabs defaultValue="web apps" className="w-40 mx-auto bg-[#11191d]">
         <TabsList>
           <TabsTrigger

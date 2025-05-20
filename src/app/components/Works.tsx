@@ -1,10 +1,10 @@
-import WorkCard from "./WorkCard";
+import { WorkCard } from "./WorkCard";
 import { works } from "../constants/works";
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Works = () => {
   return (
-    <div id="work" className="pb-14 px-0 pt-8 w-full">
+    <div id="work" className="pb-14 px-0 pt-8 w-full space-y-6">
       <h2 className="text-center font-archivo font-semibold text-2xl md:text-4xl text-white pt-16 pb-4">
         These are some of my projects
       </h2>

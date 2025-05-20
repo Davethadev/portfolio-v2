@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
-import { MoveRight } from "lucide-react";
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 
 type WorkCardProps = {
   img: string;
@@ -9,11 +11,13 @@ type WorkCardProps = {
   href: string;
 };
 
-const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
+export function WorkCard ({ img, title, desc, href }: WorkCardProps) {
   return (
-    <div
-      // data-aos="fade-up"
-      // data-aos-duration="500"
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 2 }}
+      transition={{ ease: "easeInOut", duration: 1, type: "spring" }}
+      // exit={{ y: 10, opacity: 0 }}
       className="w-full bg-[#11191d] rounded-xl px-8 py-8 space-y-4 relative"
     >
       <Image
@@ -45,15 +49,17 @@ const WorkCard = ({ img, title, desc, href }: WorkCardProps) => {
             className="font-archivo font-medium text-sm md:text-base text-white w-full rounded-lg flex items-center justify-end gap-2 view-live-btn"
             target="_blank"
           >
-            {title === 'Blog API' || title === 'Course Allocation System API' ? 'Github Url': "View live"}{" "}
+            {title === "Blog API" || title === "Course Allocation System API"
+              ? "Github Url"
+              : "View live"}{" "}
             <span>
               <MoveRight strokeWidth={1.5} color="white" />
             </span>
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default WorkCard;
+// export default WorkCard;

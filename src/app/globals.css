@@ -1,27 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @import "tailwindcss";
+
+@theme inline {
+  --font-archivo: var(--font-archivo);
+}
 
 html {
     scroll-behavior: smooth;
 }
 
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+.desktop-nav li:hover span {
+  width: 100%;
 }
 
-.inter-medium {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+.view-live-btn:hover span {
+  transform: translateX(5px);
 }
 
-.inter-semibold {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+.desktop-nav li span {
+  transition: all 250ms ease-in-out;
 }
 
-.inter-bold {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
+.view-live-btn span {
+  transition: all 100ms ease-in-out;
 }

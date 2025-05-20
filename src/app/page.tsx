@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Works from "./components/Works";
-import About from "./components/About";
+import Tools from "./components/Tools";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -10,8 +10,8 @@ export default function Home() {
     <main className="bg-[#181f2a]">
       <Navbar />
       <Hero />
+      <Tools />
       <Works />
-      <About />
       <Contact />
       <Footer />
     </main>
